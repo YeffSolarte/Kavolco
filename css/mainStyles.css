@@ -1,0 +1,25 @@
+body {
+  font-size: 11px;
+}
+.bodySection {
+  width: 100vw;
+  height: 100vh;
+  background-image: -moz-background-image url("../imgs/fondo.jpg");
+  background-image: -webkit-background-image url("../imgs/fondo.jpg");
+  background-image: -webkit-background url("../imgs/fondo.jpg");
+  background-image: -o-background-image url("../imgs/fondo.jpg");
+  background-image: -ms-background url("../imgs/fondo.jpg");
+  background-image: url("../imgs/fondo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 1em;
+  display: flex;
+  align-content: center;
+}
+.bodySection div {
+  align-self: center;
+  margin: 0 auto;
+  color: #fff;
+  background: #000;
+  height: 40vh;
+}
