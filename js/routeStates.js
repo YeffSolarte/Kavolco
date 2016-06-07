@@ -15,8 +15,8 @@
                 templateUrl: "views/home.html"
             })
             .state('aboutUS', {
-                url: "/aboutUS",
-                templateUrl: "views/aboutUS.html"
+                url: "/aboutUs",
+                templateUrl: "views/aboutUs.html"
             });
     }
 
