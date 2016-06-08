@@ -5,7 +5,6 @@ body
 .homeAppContainer
   height 100vh
   width 100vw
-  overflow hidden
   padding 0
   margin 0
 
@@ -34,6 +33,7 @@ body
     background rgba(0,0,0,.5)
     height 50vh
     text-align center
+    border-radius 7px
     & > figure
       height 50%
       & > img
@@ -71,13 +71,14 @@ body
 
 .menuNav
   width 100%
-  height 3em
+  height 5em
   font-size 1em
-  display flex
   position fixed
+  z-index 1
+  top 0
   & > nav
     width 100%
-    background rgba(0,0,0,.3)
+    background rgba(255, 255, 255, 0.5)
     & > ul
       width 100%
       margin 0
@@ -86,28 +87,107 @@ body
         list-style none
         float right
         width 10%
-        height 3em
+        height 5em
         -webkit-transition all 300ms ease-out
         -moz-transition all 300ms ease-out
         -o-transition all 300ms ease-out
         transition all 300ms ease-out
         text-align center
+        border-bottom 2px solid transparent
         &:hover
-          background rgba(255,255,255,.1)
+          background rgba(255,255,255,.8)
+          border-bottom 2px solid #193441
         & > a
-          font-size 1.5em
-          color white
-          line-height 2em
+          font-size 1.4em
+          color initial
           text-decoration none
+          line-height 3.5em
       #homeId
         float left !important
-        margin-left 1em
+        margin-left 3em
         font-weight bold
+        font-family: 'Chewy', cursive;
+        letter-spacing .2em
+        width 12%
+        & > a
+          font-size 3em
+          line-height 1.8em !important
+        &:hover
+          background initial !important
+          border-bottom 2px solid #193441
+          text-shadow: 0 3px 20px rgba(140, 140, 140, 1);
+
+.aboutUsContainer
+  width 100vw
+  position absolute
+  top 0
+
+.aboutUsFigure
+  width 80vw
+  height 60vh
+  margin 1% auto 2% auto
+  overflow hidden
+  border-radius 10px
+  background-image -moz-background-image url("../imgs/aboutUs1.jpg")
+  background-image -webkit-background-image url("../imgs/aboutUs1.jpg")
+  background-image -webkit-background url("../imgs/aboutUs1.jpg")
+  background-image -o-background-image url("../imgs/aboutUs1.jpg")
+  background-image -ms-background url("../imgs/aboutUs1.jpg")
+  background-image url("../imgs/aboutUs1.jpg")
+  position relative
+  background-position center center
+  background-repeat no-repeat
+  -webkit-background-size cover
+  background-size cover
+
+.titleFirts
+  font-size 3em
+  font-weight bold
+  border-bottom 2px solid #193441
+
+.titlePage
+  width 100%
+  text-align center
+  margin 4% auto 0 auto
+
+.textContainer
+  width 82vw
+  margin 1% auto 1% auto
+  text-align center
+  padding 0
+  position relative
+  .textInfo
+    text-align justify
+    font-size 1.5em
+  .imageInfo
+    height 100%
+    position absolute
+    right 0
+    top 0
+    & > figure
+      width 100%
+      height 100%
+      display flex
+      & > img
+        align-self center
+        width 100%
+        height auto
+        display block
+        margin 0 auto
+        border-radius 10px
+  .titleP
+    width 100%
+    text-align center
+    margin-bottom 1em
+    & > span
+      font-size 1.2em
+      font-weight bold
 
 
-
-
-@media screen and (min-width: 1700px)
-  .titleFirts
-    font-size 5em !important
-
+@media screen and (min-width:1500px)
+  .textContainer
+    .imageInfo
+      & > figure
+        & > img
+          width auto !important
+          height 100% !important
