@@ -3,10 +3,16 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 .homeAppContainer {
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
   padding: 0;
   margin: 0;
+  overflow: hidden;
+}
+.homeAppContainer footer {
+  width: 100%;
+  position: relative;
+  height: 10vh;
+  background: #193441;
 }
 .bodySection {
   height: 100vh;
@@ -87,7 +93,7 @@ body {
 }
 .menuNav > nav {
   width: 100%;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.7);
 }
 .menuNav > nav > ul {
   width: 100%;
@@ -134,9 +140,7 @@ body {
   text-shadow: 0 3px 20px #8c8c8c;
 }
 .aboutUsContainer {
-  width: 100vw;
-  position: absolute;
-  top: 0;
+  width: 100%;
 }
 .aboutUsFigure {
   width: 80vw;
@@ -156,24 +160,27 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
 }
-.titleFirts {
+.titlePage {
+  width: 100%;
+  text-align: center;
+  margin: 5em auto 0 auto;
+}
+.titlePage .titleFirts {
   font-size: 3em;
   font-weight: bold;
   border-bottom: 2px solid #193441;
 }
-.titlePage {
-  width: 100%;
-  text-align: center;
-  margin: 4% auto 0 auto;
-}
 .textContainer {
-  width: 82vw;
+  width: 82%;
   margin: 1% auto 1% auto;
   text-align: center;
   padding: 0;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
-.textContainer .textInfo {
+.textContainer .textInfo,
+.textContainer .textContainer-mini {
   text-align: justify;
   font-size: 1.5em;
 }
@@ -196,12 +203,31 @@ body {
   margin: 0 auto;
   border-radius: 10px;
 }
-.textContainer .titleP {
+.textContainer-mini {
+  margin: 0 auto;
+}
+.textContainer-mini > figure {
+  width: 100%;
+  margin-bottom: 5%;
+}
+.textContainer-mini > figure > img {
+  width: auto;
+  height: 15em;
+  display: block;
+  margin: 0 auto;
+}
+.textContainer-mini > figure .imgRadio {
+  border-radius: 50%;
+}
+.margin5pTop {
+  margin-top: 2%;
+}
+.titleP {
   width: 100%;
   text-align: center;
   margin-bottom: 1em;
 }
-.textContainer .titleP > span {
+.titleP > span {
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -209,5 +235,14 @@ body {
   .textContainer .imageInfo > figure > img {
     width: auto !important;
     height: 100% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .textContainer .imageInfo > figure > img {
+    width: auto !important;
+    height: 100% !important;
+  }
+  .imageInfo {
+    display: none;
   }
 }

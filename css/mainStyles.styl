@@ -3,10 +3,15 @@ body
   font-family: 'Open Sans', sans-serif;
 
 .homeAppContainer
-  height 100vh
-  width 100vw
+  width 100%
   padding 0
   margin 0
+  overflow hidden
+  footer
+    width 100%
+    position relative
+    height 10vh
+    background #193441
 
 .bodySection
   height 100vh
@@ -78,7 +83,7 @@ body
   top 0
   & > nav
     width 100%
-    background rgba(255, 255, 255, 0.5)
+    background rgba(255, 255, 255, 0.7)
     & > ul
       width 100%
       margin 0
@@ -118,9 +123,7 @@ body
           text-shadow: 0 3px 20px rgba(140, 140, 140, 1);
 
 .aboutUsContainer
-  width 100vw
-  position absolute
-  top 0
+  width 100%
 
 .aboutUsFigure
   width 80vw
@@ -140,23 +143,24 @@ body
   -webkit-background-size cover
   background-size cover
 
-.titleFirts
-  font-size 3em
-  font-weight bold
-  border-bottom 2px solid #193441
-
 .titlePage
   width 100%
   text-align center
-  margin 4% auto 0 auto
+  margin 5em auto 0 auto
+  .titleFirts
+    font-size 3em
+    font-weight bold
+    border-bottom 2px solid #193441
 
 .textContainer
-  width 82vw
+  width 82%
   margin 1% auto 1% auto
   text-align center
   padding 0
   position relative
-  .textInfo
+  display flex
+  flex-wrap wrap
+  .textInfo, .textContainer-mini
     text-align justify
     font-size 1.5em
   .imageInfo
@@ -175,13 +179,31 @@ body
         display block
         margin 0 auto
         border-radius 10px
-  .titleP
+
+.textContainer-mini
+  margin 0 auto
+  & > figure
     width 100%
-    text-align center
-    margin-bottom 1em
-    & > span
-      font-size 1.2em
-      font-weight bold
+    margin-bottom 5%
+    & > img
+      width auto
+      height 15em
+      display block
+      margin 0 auto
+    .imgRadio
+      border-radius 50%
+      //border-radius 50%
+
+.margin5pTop
+  margin-top 2%
+
+.titleP
+  width 100%
+  text-align center
+  margin-bottom 1em
+  & > span
+    font-size 1.2em
+    font-weight bold
 
 
 @media screen and (min-width:1500px)
@@ -191,3 +213,13 @@ body
         & > img
           width auto !important
           height 100% !important
+
+@media screen and (max-width:767px)
+  .textContainer
+    .imageInfo
+      & > figure
+        & > img
+          width auto !important
+          height 100% !important
+  .imageInfo
+    display none
