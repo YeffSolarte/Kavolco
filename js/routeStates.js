@@ -14,6 +14,10 @@
                 url: "/home",
                 templateUrl: "views/home.html"
             })
+            .state('services', {
+                url: "/services",
+                templateUrl: "views/services.html"
+            })
             .state('aboutUS', {
                 url: "/aboutUs",
                 templateUrl: "views/aboutUs.html"
