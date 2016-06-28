@@ -21,6 +21,10 @@
             .state('aboutUS', {
                 url: "/aboutUs",
                 templateUrl: "views/aboutUs.html"
+            })
+            .state('contactUs', {
+                url: "/contactUs",
+                templateUrl: "views/contactUs.html"
             });
     }
 
