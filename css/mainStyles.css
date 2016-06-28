@@ -291,7 +291,7 @@ body {
     height: 50%;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 990px) and (min-height: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 990px) and (min-height: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 990px) and (min-height: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 990px) and (min-height: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 990px) and (min-height: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 990px) and (min-height: 1024px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1000px) and (min-height: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1000px) and (min-height: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1000px) and (min-height: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1000px) and (min-height: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1000px) and (min-height: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1000px) and (min-height: 1024px) {
   .bodySection > div {
     height: 50vh;
   }

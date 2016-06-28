@@ -254,6 +254,19 @@ body
         & > li
           width initial
 
+//@media only screen and (max-width:980px) and (min-height:1632)
+//  .bodySection
+//    & > div
+//      & > figure
+//        height 40%
+//      & > div
+//        & > span
+//          font-size 6em
+//      & > ul
+//        & > li
+//          width 100%
+//          font-size 3em
+
 @media only screen and (min-height:700px)
   .bodySection
     & > div
@@ -265,12 +278,12 @@ body
       & > figure
         height 50%
 
-@media only screen and (-webkit-min-device-pixel-ratio:2)      and (max-width:990px) and (min-height:1024px),
-  only screen and (   min--moz-device-pixel-ratio:2)      and (max-width:990px) and (min-height:1024px),
-  only screen and (     -o-min-device-pixel-ratio:2/1)    and (max-width:990px) and (min-height:1024px),
-  only screen and (        min-device-pixel-ratio:2)      and (max-width:990px) and (min-height:1024px),
-  only screen and (                min-resolution:192dpi) and (max-width:990px) and (min-height:1024px),
-  only screen and (                min-resolution:2dppx)  and (max-width:990px) and (min-height:1024px)
+@media only screen and (-webkit-min-device-pixel-ratio:2) and (max-width:1000px) and (min-height:1024px),
+  only screen and (min--moz-device-pixel-ratio:2) and (max-width:1000px) and (min-height:1024px),
+  only screen and (-o-min-device-pixel-ratio:2/1) and (max-width:1000px) and (min-height:1024px),
+  only screen and (min-device-pixel-ratio:2) and (max-width:1000px) and (min-height:1024px),
+  only screen and (min-resolution:192dpi) and (max-width:1000px) and (min-height:1024px),
+  only screen and (min-resolution:2dppx) and (max-width:1000px) and (min-height:1024px)
   .bodySection
     & > div
       height 50vh
@@ -285,25 +298,3 @@ body
         & > li
           width 100%
           font-size 3em
-
-//@media screen and (min-width:1500px)
-//  .textContainer
-//    .imageInfo
-//      & > figure
-//        & > img
-//          width auto !important
-//          height 100% !important
-//
-//@media screen and (max-width:767px)
-//  .imageInfo
-//    display none
-//
-//
-//@media screen and (max-width:767px) and (max-height:768px)
-//  //body
-//  //  font-size 14px !important
-//  .bodySection
-//    & > div
-//      height 75vh
-//      & > figure
-//        height 40%
