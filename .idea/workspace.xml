@@ -31,10 +31,10 @@
             <entry file="file://$PROJECT_DIR$/css/mainStyles.styl">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="29">
-                  <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+                  <caret line="214" column="8" selection-start-line="214" selection-start-column="8" selection-end-line="214" selection-end-column="8" />
                   <folding>
-                    <marker date="1467131167519" expanded="true" signature="253:2474" placeholder="{...}" />
-                    <marker date="1467131167519" expanded="true" signature="1143:2474" placeholder="{...}" />
+                    <marker date="1467131547690" expanded="true" signature="253:2524" placeholder="{...}" />
+                    <marker date="1467131547690" expanded="true" signature="1193:2524" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -57,8 +57,8 @@
           <file leaf-file-name="mainStyles.styl" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/mainStyles.styl">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+                <state relative-caret-position="272">
+                  <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
@@ -237,12 +237,12 @@
       <workItem from="1466607298874" duration="702000" />
       <workItem from="1466703938520" duration="14501000" />
       <workItem from="1466795444729" duration="1072000" />
-      <workItem from="1467120005296" duration="7107000" />
+      <workItem from="1467120005296" duration="7475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73785000" />
+    <option name="totallyTimeSpent" value="74153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="325" y="0" width="1602" height="1047" extended-state="0" />
@@ -664,8 +664,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mainStyles.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+        <state relative-caret-position="272">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
           <folding />
         </state>
       </provider>
