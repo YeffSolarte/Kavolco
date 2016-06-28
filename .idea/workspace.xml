@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c07accd2-33b9-4d8f-8b8c-817a3673e7ac" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/logoWithowName -min.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/logoWithowName .png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mainStyles.css" afterPath="$PROJECT_DIR$/css/mainStyles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mainStyles.styl" afterPath="$PROJECT_DIR$/css/mainStyles.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-    </list>
+    <list default="true" id="c07accd2-33b9-4d8f-8b8c-817a3673e7ac" name="Default" comment="" />
     <ignored path="Kavolco.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,8 +82,8 @@
           <file leaf-file-name="mainStyles.styl" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/mainStyles.styl">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="277">
-                  <caret line="276" column="13" selection-start-line="276" selection-start-column="13" selection-end-line="276" selection-end-column="13" />
+                <state relative-caret-position="1100">
+                  <caret line="267" column="60" selection-start-line="267" selection-start-column="60" selection-end-line="267" selection-end-column="60" />
                   <folding />
                 </state>
               </provider>
@@ -307,12 +301,12 @@
       <workItem from="1466607298874" duration="702000" />
       <workItem from="1466703938520" duration="14501000" />
       <workItem from="1466795444729" duration="1072000" />
-      <workItem from="1467120005296" duration="19103000" />
+      <workItem from="1467120005296" duration="20663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85781000" />
+    <option name="totallyTimeSpent" value="87341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
