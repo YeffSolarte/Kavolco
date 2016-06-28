@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c07accd2-33b9-4d8f-8b8c-817a3673e7ac" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mainStyles.css" afterPath="$PROJECT_DIR$/css/mainStyles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mainStyles.styl" afterPath="$PROJECT_DIR$/css/mainStyles.styl" />
     </list>
@@ -33,8 +32,8 @@
                 <state relative-caret-position="29">
                   <caret line="214" column="8" selection-start-line="214" selection-start-column="8" selection-end-line="214" selection-end-column="8" />
                   <folding>
-                    <marker date="1467131547690" expanded="true" signature="253:2524" placeholder="{...}" />
-                    <marker date="1467131547690" expanded="true" signature="1193:2524" placeholder="{...}" />
+                    <marker date="1467131717769" expanded="true" signature="253:2528" placeholder="{...}" />
+                    <marker date="1467131717769" expanded="true" signature="1197:2528" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -57,8 +56,8 @@
           <file leaf-file-name="mainStyles.styl" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/mainStyles.styl">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+                <state relative-caret-position="323">
+                  <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -237,12 +236,12 @@
       <workItem from="1466607298874" duration="702000" />
       <workItem from="1466703938520" duration="14501000" />
       <workItem from="1466795444729" duration="1072000" />
-      <workItem from="1467120005296" duration="7475000" />
+      <workItem from="1467120005296" duration="7648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74153000" />
+    <option name="totallyTimeSpent" value="74326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="325" y="0" width="1602" height="1047" extended-state="0" />
@@ -664,8 +663,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mainStyles.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        <state relative-caret-position="323">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
           <folding />
         </state>
       </provider>
