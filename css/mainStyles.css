@@ -41,6 +41,8 @@ body {
 }
 .bodySection > div {
   align-self: center;
+  -webkit-align-self: center;
+  -moz-box-align: center;
   margin: 0 auto;
   color: #fff;
   background: rgba(0,0,0,0.5);
