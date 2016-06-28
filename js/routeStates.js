@@ -18,7 +18,7 @@
                 url: "/services",
                 templateUrl: "views/services.html"
             })
-            .state('aboutUS', {
+            .state('aboutUs', {
                 url: "/aboutUs",
                 templateUrl: "views/aboutUs.html"
             })
