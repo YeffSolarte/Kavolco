@@ -245,14 +245,36 @@ body
           width auto
           height 100%
 
-
-@media only screen and (min-width:650px)
+@media only screen and (min-width:550px)
   .bodySection
     & > div
-      height 50vh
+      height 70vh
+      & > figure
+        height 35%
+        & > img
+          margin 1em auto 0 auto
+      & > div
+        margin-top .5em
+        & > span
+          font-size 3em
       & > ul
         & > li
           width initial
+          font-size 1em
+
+@media only screen and (min-width:650px)
+
+  .bodySection
+    & > div
+      height 50vh
+      & > figure
+        height 35%
+        & > img
+          margin 1em auto 0 auto
+      & > ul
+        & > li
+          width initial
+          font-size 1.3em
 
 //@media only screen and (max-width:980px) and (min-height:1632)
 //  .bodySection
@@ -274,9 +296,12 @@ body
 
 @media only screen and (min-width:1360px)
   .bodySection
-    & > div
-      & > figure
-        height 50%
+      & > div
+        & > figure
+          height 50%
+        & > div
+          & > span
+            font-size 4em
 
 @media only screen and (-webkit-min-device-pixel-ratio:2) and (max-width:1000px) and (min-height:1024px),
   only screen and (min--moz-device-pixel-ratio:2) and (max-width:1000px) and (min-height:1024px),
@@ -289,8 +314,6 @@ body
       height 50vh
       & > figure
         height 40%
-        & > img
-          max-width 700px
       & > div
         & > span
           font-size 6em

@@ -273,12 +273,40 @@ body {
   width: auto;
   height: 100%;
 }
+@media only screen and (min-width: 550px) {
+  .bodySection > div {
+    height: 70vh;
+  }
+  .bodySection > div > figure {
+    height: 35%;
+  }
+  .bodySection > div > figure > img {
+    margin: 1em auto 0 auto;
+  }
+  .bodySection > div > div {
+    margin-top: 0.5em;
+  }
+  .bodySection > div > div > span {
+    font-size: 3em;
+  }
+  .bodySection > div > ul > li {
+    width: initial;
+    font-size: 1em;
+  }
+}
 @media only screen and (min-width: 650px) {
   .bodySection > div {
     height: 50vh;
   }
+  .bodySection > div > figure {
+    height: 35%;
+  }
+  .bodySection > div > figure > img {
+    margin: 1em auto 0 auto;
+  }
   .bodySection > div > ul > li {
     width: initial;
+    font-size: 1.3em;
   }
 }
 @media only screen and (min-height: 700px) {
@@ -290,6 +318,9 @@ body {
   .bodySection > div > figure {
     height: 50%;
   }
+  .bodySection > div > div > span {
+    font-size: 4em;
+  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1000px) and (min-height: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1000px) and (min-height: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1000px) and (min-height: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1000px) and (min-height: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1000px) and (min-height: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1000px) and (min-height: 1024px) {
   .bodySection > div {
@@ -297,9 +328,6 @@ body {
   }
   .bodySection > div > figure {
     height: 40%;
-  }
-  .bodySection > div > figure > img {
-    max-width: 700px;
   }
   .bodySection > div > div > span {
     font-size: 6em;
