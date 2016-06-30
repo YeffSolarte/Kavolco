@@ -1,23 +1,33 @@
 body
   font-size 11px
   font-family: 'Open Sans', sans-serif;
+  min-height 320px
+  min-width 320px
 
 .homeAppContainer
-  height 100vh
-  width 100vw
+  width 100%
   padding 0
   margin 0
+  overflow hidden
+  footer
+    width 100%
+    position relative
+    height 10vh
+    background #193441
 
 .bodySection
   height 100vh
   width 100vw
+  min-height 320px
+  min-width 320px
   overflow hidden
-  background-image -moz-background-image url("../imgs/fondo.jpg")
-  background-image -webkit-background-image url("../imgs/fondo.jpg")
-  background-image -webkit-background url("../imgs/fondo.jpg")
-  background-image -o-background-image url("../imgs/fondo.jpg")
-  background-image -ms-background url("../imgs/fondo.jpg")
-  background-image url("../imgs/fondo.jpg")
+  background-image -moz-background-image url("../imgs/fondo-min.jpg")
+  background-image -webkit-background-image url("../imgs/fondo-min.jpg")
+  background-image -webkit-background url("../imgs/fondo-min.jpg")
+  background-image -o-background-image url("../imgs/fondo-min.jpg")
+  background-image -ms-background url("../imgs/fondo-min.jpg")
+  background-image url("../imgs/fondo-min.jpg")
+  //-webkit-background url("../imgs/fondo-min.jpg")
   position relative
   background-position center center
   background-repeat no-repeat
@@ -25,35 +35,56 @@ body
   background-size cover
   font-size 1em
   display flex
+  display -webkit-box      /* OLD - iOS 6-, Safari 3.1-6 */
+  display -moz-box         /* OLD - Firefox 19- (buggy but mostly works) */
+  display -ms-flexbox      /* TWEENER - IE 10 */
+  display -webkit-flex     /* NEW - Chrome */
+  display flex
   align-content center
   & > div
     align-self center
+    -webkit-align-self center
+    -moz-box-align center
     margin 0 auto
     color white
     background rgba(0,0,0,.5)
-    height 50vh
+    position relative
+    //height 50vh
+    height 75vh
     text-align center
     border-radius 7px
+    -webkit-transition all 300ms ease-out
+    -moz-transition all 300ms ease-out
+    -o-transition all 300ms ease-out
+    transition all 300ms ease-out
     & > figure
-      height 50%
+      height 35%
       & > img
         height 100%
+        max-width 300px
+        max-height 100%
         width auto
         display block
         margin 2em auto
-    & > span
-      font-family: 'Chewy', cursive;
-      color white
-      font-size 3em
-      letter-spacing .2em
+    & > div
+      margin-top 2em
+      & > span
+        font-family: 'Chewy', cursive;
+        color white
+        font-size 3em
+        letter-spacing .2em
     & > ul 
       width 100%
-      display table
+      position absolute
+      bottom 0
+      left 0
+      right 0
+      display block
       padding 0
-      margin-top 2em
       & > li
-        height 2.5em
-        display table-cell
+        width 100%
+        margin .2em 0
+        display inline-block
         font-size 1.3em
         -webkit-transition all 300ms ease-out
         -moz-transition all 300ms ease-out
@@ -65,6 +96,7 @@ body
           border-bottom 2px solid white
         a 
           color white
+          padding .5em 3em
           line-height 2.5em
           vertical-align middle
           text-decoration none
@@ -78,7 +110,7 @@ body
   top 0
   & > nav
     width 100%
-    background rgba(255, 255, 255, 0.5)
+    background rgba(255, 255, 255, 0.7)
     & > ul
       width 100%
       margin 0
@@ -99,7 +131,7 @@ body
           border-bottom 2px solid #193441
         & > a
           font-size 1.4em
-          color initial
+          color black
           text-decoration none
           line-height 3.5em
       #homeId
@@ -118,9 +150,7 @@ body
           text-shadow: 0 3px 20px rgba(140, 140, 140, 1);
 
 .aboutUsContainer
-  width 100vw
-  position absolute
-  top 0
+  width 100%
 
 .aboutUsFigure
   width 80vw
@@ -140,23 +170,24 @@ body
   -webkit-background-size cover
   background-size cover
 
-.titleFirts
-  font-size 3em
-  font-weight bold
-  border-bottom 2px solid #193441
-
 .titlePage
   width 100%
   text-align center
-  margin 4% auto 0 auto
+  margin 5em auto 0 auto
+  .titleFirts
+    font-size 3em
+    font-weight bold
+    border-bottom 2px solid #193441
 
 .textContainer
-  width 82vw
+  width 82%
   margin 1% auto 1% auto
   text-align center
   padding 0
   position relative
-  .textInfo
+  display flex
+  flex-wrap wrap
+  .textInfo, .textContainer-mini
     text-align justify
     font-size 1.5em
   .imageInfo
@@ -175,19 +206,120 @@ body
         display block
         margin 0 auto
         border-radius 10px
-  .titleP
+
+.textContainer-mini
+  margin 0 auto
+  & > figure
     width 100%
-    text-align center
-    margin-bottom 1em
+    margin-bottom 5%
+    & > img
+      width auto
+      height 15em
+      display block
+      margin 0 auto
+    .imgRadio
+      border-radius 50%
+      //border-radius 50%
+
+.margin5pTop
+  margin-top 2%
+
+.titleP
+  width 100%
+  text-align center
+  margin-bottom 1em
+  & > span
+    font-size 1.2em
+    font-weight bold
+
+.servicesContainer
+  width 100%
+  & > div
+    width 100%
+    position relative
+    display inline-block
     & > span
-      font-size 1.2em
-      font-weight bold
-
-
-@media screen and (min-width:1500px)
-  .textContainer
-    .imageInfo
-      & > figure
+      font-size 1.5em
+    & > div
+      figure
+        width 100%
+        height 10em
         & > img
-          width auto !important
-          height 100% !important
+          width auto
+          height 100%
+
+@media only screen and (min-width:400px) and (max-height:400px)
+  .bodySection
+    & > div
+      height 70vh
+      & > figure
+        height 35%
+        & > img
+          margin 1em auto 0 auto
+      & > div
+        margin-top .5em
+        & > span
+          font-size 3em
+      & > ul
+        & > li
+          width initial
+          font-size 1em
+
+@media only screen and (min-width:650px)
+  .bodySection
+    & > div
+      height 50vh
+      & > figure
+        height 35%
+        & > img
+          margin 1em auto 0 auto
+      & > ul
+        & > li
+          width initial
+          font-size 1.3em
+
+//@media only screen and (max-width:980px) and (min-height:1632)
+//  .bodySection
+//    & > div
+//      & > figure
+//        height 40%
+//      & > div
+//        & > span
+//          font-size 6em
+//      & > ul
+//        & > li
+//          width 100%
+//          font-size 3em
+
+@media only screen and (min-height:700px)
+  .bodySection
+    & > div
+      height 50vh
+
+@media only screen and (min-width:1360px)
+  .bodySection
+      & > div
+        & > figure
+          height 50%
+        & > div
+          & > span
+            font-size 4em
+
+@media only screen and (-webkit-min-device-pixel-ratio:2) and (max-width:1000px) and (min-height:1024px),
+  only screen and (min--moz-device-pixel-ratio:2) and (max-width:1000px) and (min-height:1024px),
+  only screen and (-o-min-device-pixel-ratio:2/1) and (max-width:1000px) and (min-height:1024px),
+  only screen and (min-device-pixel-ratio:2) and (max-width:1000px) and (min-height:1024px),
+  only screen and (min-resolution:192dpi) and (max-width:1000px) and (min-height:1024px),
+  only screen and (min-resolution:2dppx) and (max-width:1000px) and (min-height:1024px)
+  .bodySection
+    & > div
+      height 50vh
+      & > figure
+        height 40%
+      & > div
+        & > span
+          font-size 6em
+      & > ul
+        & > li
+          width 100%
+          font-size 3em

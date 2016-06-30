@@ -12,12 +12,21 @@
         $stateProvider
             .state('home', {
                 url: "/home",
-                templateUrl: "views/home.html"
+                templateUrl: "home.html"
             })
-            .state('aboutUS', {
+            .state('services', {
+                url: "/services",
+                templateUrl: "services.html"
+            })
+            .state('aboutUs', {
                 url: "/aboutUs",
-                templateUrl: "views/aboutUs.html"
+                templateUrl: "aboutUs.html"
+            })
+            .state('contactUs', {
+                url: "/contactUs",
+                templateUrl: "contactUs.html"
             });
     }
 
 })();
+// <script type="text/ng-template" id="PurchaseNavTemplate.html"></script>
