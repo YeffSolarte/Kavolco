@@ -130,8 +130,10 @@ body {
 .menuNav > nav > ul > li {
   list-style: none;
   float: right;
-  width: 10%;
+  display: none;
+  line-height: 5em;
   height: 5em;
+  padding: 0 2em;
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
   -o-transition: all 300ms ease-out;
@@ -147,24 +149,43 @@ body {
   font-size: 1.4em;
   color: #000;
   text-decoration: none;
-  line-height: 3.5em;
 }
 .menuNav > nav > ul #homeId {
   float: left !important;
-  margin-left: 3em;
+  display: block;
   font-weight: bold;
   font-family: 'Chewy', cursive;
   letter-spacing: 0.2em;
-  width: 12%;
 }
 .menuNav > nav > ul #homeId > a {
-  font-size: 3em;
-  line-height: 1.8em !important;
+  font-size: 2.7em;
 }
 .menuNav > nav > ul #homeId:hover {
   background: initial !important;
   border-bottom: 2px solid #193441;
   text-shadow: 0 3px 20px #8c8c8c;
+}
+.menuNav > nav > ul #buttonNav {
+  float: right;
+  display: block;
+}
+.menuNav > nav > ul #buttonNav > button {
+  background: transparent;
+  color: #808080;
+  border: none;
+  font-size: 2em;
+}
+.menuNav > nav > ul #buttonNav > button:hover {
+  color: #193441;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+.menuNav > nav > ul #buttonNav:hover {
+  background: transparent;
+  color: #193441;
+  border-bottom: 2px solid transparent;
 }
 .aboutUsContainer {
   width: 100%;
@@ -190,10 +211,10 @@ body {
 .titlePage {
   width: 100%;
   text-align: center;
-  margin: 5em auto 0 auto;
+  margin: 7em auto 0 auto;
 }
 .titlePage .titleFirts {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
   border-bottom: 2px solid #193441;
 }
