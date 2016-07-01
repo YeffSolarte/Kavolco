@@ -4,9 +4,26 @@
             <img src="" alt=""/>
         </figure>
         <ul class="container">
-            <li><a ui-sref="aboutUs">¿Quienes Somos?</a></li>
-            <li><a ui-sref="services">¿Qué Ofrecemos?</a></li>
+            <li><a ui-sref="aboutUs">Quiénes Somos</a></li>
+            <li><a ui-sref="services">Servicios</a></li>
             <li id="homeId"><a ui-sref="home">KAVOLCO</a></li>
+            <li id="buttonNav"><button class="glyphicon glyphicon-menu-hamburger" ng-click="mCtrl.rotateBtn = !mCtrl.rotateBtn" ng-class="{'buttonReverse' : mCtrl.rotateBtn }"></button></li>
         </ul>
+        <div class="navHidden" ng-if="mCtrl.rotateBtn">
+            <ul>
+                <li><a ui-sref="aboutUs">Quiénes Somos</a></li>
+                <li><a ui-sref="services">Servicios</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
+<section class="aboutUsContainer">
+    <div class="titlePage">
+        <span class="titleFirts">Conctáctenos</span>
+    </div>
+    <div class="contactUsContainer">
+    </div>
+</section>a
+<footer>
+
+</footer>

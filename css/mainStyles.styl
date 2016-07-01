@@ -12,7 +12,7 @@ body
   footer
     width 100%
     position relative
-    height 10vh
+    height 7em
     background #193441
 
 .bodySection
@@ -292,19 +292,55 @@ body
 
 .servicesContainer
   width 100%
+  margin-top 1em
+  overflow hidden
+  text-align center
   & > div
-    width 100%
-    position relative
-    display inline-block
-    & > span
-      font-size 1.5em
-    & > div
-      figure
+    margin-bottom 2em
+    & > .containerImage
+      width 15em
+      height 15em
+      line-height 15em
+      display block
+      margin 0 auto
+      border-radius 50%
+      border 7px  solid transparent
+      -webkit-transition all 500ms ease-out
+      -moz-transition all 500ms ease-out
+      -o-transition all 500ms ease-out
+      transition all 500ms ease-out
+      & > figure
         width 100%
-        height 10em
         & > img
-          width auto
-          height 100%
+          width 90%
+          height auto
+    & > div
+      width 100%
+      & > span
+        font-size 1.3em
+        font-weight bold
+    &:hover
+      & > .containerImage
+          border 7px solid #193441
+      & > div
+        & > span
+          border-bottom 2px solid #193441
+  //& > div
+  //  width 100%
+  //  position relative
+  //  display inline-block
+  //  & > span
+  //    font-size 1.5em
+  //    font-weight bold
+  //  & > div
+  //    margin 2em 0
+  //    figure
+  //      width 100%
+  //      & > img
+  //        width 50%
+  //        display block
+  //        margin 0 auto
+  //        height auto
 
 
 @media only screen and (min-width:500px) and (orientation: landscape)
@@ -332,6 +368,12 @@ body
         & > li
           width initial
           font-size 1.3em
+  .textContainer
+    .imageInfo
+      & > figure
+        width 100%
+        height 100%
+        display flex
 
 @media only screen and (min-width:980px)
   .bodySection
@@ -346,6 +388,17 @@ body
         & > li
           & > a
             padding 0.5em 2em
+  .menuNav
+    & > nav
+      & > ul
+        & > li
+          list-style none
+          float right
+          display block
+          & > a
+            font-size 1.4em
+        #buttonNav
+          display none
 
 @media only screen and (min-width:1600px)
   .bodySection
