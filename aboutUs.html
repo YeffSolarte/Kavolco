@@ -7,9 +7,9 @@
             <li><a ui-sref="contactUs">Contáctenos</a></li>
             <li><a ui-sref="services">¿Qué Ofrecemos?</a></li>
             <li id="homeId"><a ui-sref="home">KAVOLCO</a></li>
-            <li id="buttonNav"><button class="glyphicon glyphicon-menu-hamburger" ng-click="" ng-class=""></button></li>
+            <li id="buttonNav"><button class="glyphicon glyphicon-menu-hamburger" ng-click="mCtrl.rotateBtn = !mCtrl.rotateBtn" ng-class="{'buttonReverse' : mCtrl.rotateBtn }"></button></li>
         </ul>
-        <div class="navHidden" ng-class="">
+        <div class="navHidden" ng-if="mCtrl.rotateBtn">
             <ul>
                 <li><a ui-sref="services">Qué Ofrecemos?</a></li>
                 <li><a ui-sref="contactUs">Contáctenos</a></li>
@@ -21,7 +21,7 @@
     <div class="titlePage">
         <span class="titleFirts">¿Quiénes Somos?</span>
     </div>
-    <div class="aboutUsFigure"></div>
+    <div class="aboutUsFigure col-xs-11 col-md-10"></div>
     <div class="container textContainer">
         <div class="col-xs-12 col-sm-6 textInfo ">
             <p><strong>KAVOLCO S.A.S</strong> es una compañía que construye caminos para el territorio Colombiano y se
