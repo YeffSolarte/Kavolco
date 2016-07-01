@@ -238,7 +238,7 @@ body {
 .aboutUsFigure {
   height: 50vh;
   margin: 1em auto 2em auto;
-  float: initial;
+  float: none;
   overflow: hidden;
   border-radius: 3px;
   background-image: -moz-background-image url("../imgs/aboutUs1-min.jpg");
