@@ -13,5 +13,9 @@
             vm.rotateBtn = false;
         });
 
+        vm.chole = function(){
+            console.log("asdjasdksfusd");
+        }
+
     }
 })();
