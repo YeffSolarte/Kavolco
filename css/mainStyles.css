@@ -369,6 +369,79 @@ body {
 .servicesContainer > div:hover > div > span {
   border-bottom: 2px solid #193441;
 }
+.containerModal {
+  width: 100%;
+  font-size: 1em;
+}
+.containerModal > .containerModal-header {
+  width: 100%;
+  height: 4em;
+  line-height: 4em;
+  overflow: hidden;
+  text-align: center;
+  background: #193441;
+  position: relative;
+}
+.containerModal > .containerModal-header > span {
+  font-size: 1.8em;
+  color: #fff;
+  font-weight: bold;
+}
+.containerModal > .containerModal-header > button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 0.5em;
+  font-size: 1.3em;
+  border: none;
+  background: transparent;
+  vertical-align: middle;
+  line-height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  color: #fff;
+}
+.containerModal > .containerModal-header > button:hover {
+  background: rgba(255,255,255,0.3);
+  color: #fff;
+}
+.containerModal > .containerModal-header > button:focus,
+.containerModal > .containerModal-header > button:active {
+  outline: thin none;
+  outline-offset: 0;
+  background: rgba(255,255,255,0.3);
+}
+.servicesContainer-modal {
+  width: 100%;
+  overflow: hidden;
+}
+.servicesContainer-modal > div > figure {
+  width: 100%;
+  margin: 3em 0;
+}
+.servicesContainer-modal > div > figure > img {
+  width: 15em;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+.servicesContainer-modal > div > figure .width1Image {
+  height: 6em;
+  width: auto;
+}
+.servicesContainer-modal > div > span {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.servicesContainer-modal > div > div > p {
+  font-size: 1.2em;
+  text-align: justify;
+  letter-spacing: 1px;
+}
 @media only screen and (min-width: 500px) and (orientation: landscape) {
   .bodySection > div {
     height: 50vh;

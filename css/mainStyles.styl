@@ -1,3 +1,5 @@
+colorGeneral = #193441
+
 body
   font-size 11px
   font-family: 'Open Sans', sans-serif;
@@ -131,7 +133,7 @@ body
         border-bottom 2px solid transparent
         &:hover
           background rgba(255,255,255,.8)
-          border-bottom 2px solid #193441
+          border-bottom 2px solid colorGeneral
         & > a
           font-size 1.4em
           color black
@@ -147,7 +149,7 @@ body
           font-size 2.7em
         &:hover
           background initial !important
-          border-bottom 2px solid #193441
+          border-bottom 2px solid colorGeneral
           text-shadow 0 3px 20px rgba(140, 140, 140, 1)
       #buttonNav
         float right
@@ -161,14 +163,14 @@ body
             outline thin none
             outline-offset 0
           &:hover
-            color #193441
+            color colorGeneral
             -webkit-transition all 300ms ease-out
             -moz-transition all 300ms ease-out
             -o-transition all 300ms ease-out
             transition all 300ms ease-out
         &:hover
           background transparent
-          color #193441
+          color colorGeneral
           border-bottom 2px solid transparent
 
         .buttonReverse
@@ -194,7 +196,7 @@ body
           border-bottom 1px solid gainsboro
           &:hover
             background rgba(255,255,255,.8)
-            border-bottom 2px solid #193441
+            border-bottom 2px solid colorGeneral
           &:first-child
             border-top 1px solid gainsboro
           & > a
@@ -234,7 +236,7 @@ body
   .titleFirts
     font-size 2 em
     font-weight bold
-    border-bottom 2px solid #193441
+    border-bottom 2px solid colorGeneral
 
 .textContainer
   width 82%
@@ -322,26 +324,75 @@ body
     &:hover
       cursor pointer
       & > .containerImage
-          border 7px solid #193441
+          border 7px solid colorGeneral
       & > div
         & > span
-          border-bottom 2px solid #193441
-  //& > div
-  //  width 100%
-  //  position relative
-  //  display inline-block
-  //  & > span
-  //    font-size 1.5em
-  //    font-weight bold
-  //  & > div
-  //    margin 2em 0
-  //    figure
-  //      width 100%
-  //      & > img
-  //        width 50%
-  //        display block
-  //        margin 0 auto
-  //        height auto
+          border-bottom 2px solid colorGeneral
+
+
+.containerModal
+  width 100%
+  font-size 1em
+  & > .containerModal-header
+    width 100%
+    height 4em
+    line-height 4em
+    overflow hidden
+    text-align center
+    background colorGeneral
+    position relative
+    & > span
+      font-size 1.8em
+      color white
+      font-weight bold
+    & > button
+      position absolute
+      right 0
+      top 0
+      margin-right .5em
+      font-size 1.3em
+      border none
+      background transparent
+      vertical-align middle
+      line-height 3em
+      width 3em
+      border-radius 50%
+      -webkit-transition all 500ms ease-out
+      -moz-transition all 500ms ease-out
+      -o-transition all 500ms ease-out
+      transition all 500ms ease-out
+      color white
+      &:hover
+        background rgba(255,255,255,0.3)
+        color white
+      &:focus, &:active
+        outline thin none
+        outline-offset 0
+        background rgba(255,255,255,0.3)
+
+.servicesContainer-modal
+  width 100%
+  overflow hidden
+  & > div
+    & > figure
+      width 100%
+      margin 3em 0
+      & > img
+        width 15em
+        display block
+        margin 0 auto
+        height auto
+      .width1Image
+        height 6em
+        width auto
+    & > span
+      font-size 1.4em
+      font-weight bold
+    & > div
+      & > p
+        font-size 1.2em
+        text-align justify
+        letter-spacing 1px
 
 
 @media only screen and (min-width:500px) and (orientation: landscape)
