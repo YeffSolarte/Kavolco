@@ -15,7 +15,8 @@
         function activate(){
             console.log(screen);
             console.log(screen.height);
-            vm.screenHeight = screen.height;
+            console.log(screen.availHeight);
+            vm.screenHeight = screen.availHeight;
         }
 
         $scope.$on('$stateChangeStart',function(event, toState, toParams, fromState, fromParams){
