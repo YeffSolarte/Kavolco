@@ -1,5 +1,7 @@
 colorGeneral = #193441
-
+body, html
+  height 100vh
+  width 100vw
 body
   font-size 11px
   font-family: 'Open Sans', sans-serif;
@@ -393,6 +395,18 @@ body
         font-size 1.2em
         text-align justify
         letter-spacing 1px
+
+.contactUsContainer
+  width 100%
+  overflow hidden
+  text-align center
+  .mapContact
+    background black
+    & > iframe
+      width 95%
+      margin 0 auto
+      display block
+      height 50vh
 
 
 @media only screen and (min-width:500px) and (orientation: landscape)

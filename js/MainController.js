@@ -8,6 +8,15 @@
     function MainController($scope,$uibModal){
         var vm = this;
         vm.rotateBtn = false;
+        vm.screenHeight = '';
+
+        activate();
+
+        function activate(){
+            console.log(screen);
+            console.log(screen.height);
+            vm.screenHeight = screen.height;
+        }
 
         $scope.$on('$stateChangeStart',function(event, toState, toParams, fromState, fromParams){
             vm.rotateBtn = false;
