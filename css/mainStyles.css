@@ -237,7 +237,7 @@ body {
   width: 100%;
 }
 .aboutUsFigure {
-  height: 50vh;
+  height: 20em;
   margin: 1em auto 2em auto;
   float: none;
   overflow: hidden;
@@ -472,7 +472,7 @@ body {
     font-size: 1em;
   }
 }
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 769px) {
   .bodySection > div {
     height: 50vh;
   }
