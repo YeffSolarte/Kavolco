@@ -49,6 +49,7 @@ body {
   margin: 0 auto;
   color: #fff;
   background: rgba(0,0,0,0.5);
+  display: block;
   position: relative;
   height: 75vh;
   min-height: 320px;
