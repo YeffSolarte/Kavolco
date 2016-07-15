@@ -61,7 +61,7 @@ body {
   transition: all 300ms ease-out;
 }
 .bodySection > div > figure {
-  height: 35%;
+  height: 10.5em;
 }
 .bodySection > div > figure > img {
   height: 100%;
@@ -242,12 +242,12 @@ body {
   float: none;
   overflow: hidden;
   border-radius: 3px;
-  background-image: -moz-background-image url("../imgs/aboutUs1.jpg");
-  background-image: -webkit-background-image url("../imgs/aboutUs1.jpg");
-  background-image: -webkit-background url("../imgs/aboutUs1.jpg");
-  background-image: -o-background-image url("../imgs/aboutUs1.jpg");
-  background-image: -ms-background url("../imgs/aboutUs1.jpg");
-  background-image: url("../imgs/aboutUs1.jpg");
+  background-image: -moz-background-image url("../imgs/aboutUs.jpg");
+  background-image: -webkit-background-image url("../imgs/aboutUs.jpg");
+  background-image: -webkit-background url("../imgs/aboutUs.jpg");
+  background-image: -o-background-image url("../imgs/aboutUs.jpg");
+  background-image: -ms-background url("../imgs/aboutUs.jpg");
+  background-image: url("../imgs/aboutUs.jpg");
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
@@ -462,7 +462,7 @@ body {
     height: 50vh;
   }
   .bodySection > div > figure {
-    height: 35%;
+    height: 10.5em;
   }
   .bodySection > div > figure > img {
     margin: 1em auto 0 auto;
@@ -477,7 +477,7 @@ body {
     height: 50vh;
   }
   .bodySection > div > figure {
-    height: 35%;
+    height: 10.5em;
   }
   .bodySection > div > figure > img {
     margin: 1em auto 0 auto;
@@ -516,7 +516,7 @@ body {
 }
 @media only screen and (min-width: 1600px) {
   .bodySection > div > figure {
-    height: 45%;
+    height: 15em;
   }
   .bodySection > div > figure > img {
     margin: 2em auto;
