@@ -184,6 +184,7 @@ body
       -moz-transition all 500ms ease-out
       -o-transition all 500ms ease-out
       transition all 500ms ease-out
+      display block
       & > ul
         width 100%
         padding 0
@@ -212,7 +213,7 @@ body
   width 100%
 
 .aboutUsFigure
-  height 20em
+  height 50vh
   //height 50vh
   margin 1em auto 2em auto
   float none
@@ -240,7 +241,7 @@ body
     border-bottom 2px solid colorGeneral
 
 .textContainer
-  width 82%
+  width 100%
   margin 1% auto 1% auto
   text-align center
   padding 0
@@ -407,6 +408,10 @@ body
       display block
       height 50vh
 
+.float-none
+  float none !important
+  display inline-block
+
 
 @media only screen and (min-width:500px) and (orientation: landscape)
   .bodySection
@@ -421,7 +426,7 @@ body
           width initial
           font-size 1em
 
-@media only screen and (min-width:769px)
+@media only screen and (min-width:768px)
   .bodySection
     & > div
       height 50vh
@@ -434,10 +439,9 @@ body
           width initial
           font-size 1.3em
   .textContainer
+    width 82%
     .imageInfo
       & > figure
-        width 100%
-        height 100%
         display flex
 
 @media only screen and (min-width:980px)
@@ -464,6 +468,28 @@ body
             font-size 1.4em
         #buttonNav
           display none
+  .navHidden
+    display none !important
+
+@media only screen and (min-width:1200px)
+  .textContainer
+    .imageInfo
+      & > figure
+        & > img
+          width auto !important
+          height 100% !important
+  .servicesContainer
+    & > div
+      margin-bottom 2em
+      & > .containerImage
+        width 20em
+        height 20em
+        line-height 20em
+        & > figure
+          width 100%
+          & > img
+            width 90%
+            height auto
 
 @media only screen and (min-width:1600px)
   .bodySection
