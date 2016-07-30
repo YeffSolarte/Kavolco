@@ -1,21 +1,24 @@
 <header class="menuNav">
     <nav>
-        <figure>
-            <img src="" alt=""/>
-        </figure>
         <ul class="container">
             <li><a ui-sref="contactUs">Contáctenos</a></li>
-            <li><a ui-sref="services">¿Que Ofrecemos?</a></li>
+            <li><a ui-sref="services">Servicios</a></li>
             <li id="homeId"><a ui-sref="home">KAVOLCO</a></li>
-            <li id="buttonNav"><button class="glyphicon glyphicon-menu-hamburger"></button></li>
+            <li id="buttonNav"><button class="glyphicon glyphicon-menu-hamburger" ng-click="mCtrl.rotateBtn = !mCtrl.rotateBtn" ng-class="{'buttonReverse' : mCtrl.rotateBtn }"></button></li>
         </ul>
+        <div class="navHidden" ng-if="mCtrl.rotateBtn">
+            <ul>
+                <li><a ui-sref="services">Productos y Servicios</a></li>
+                <li><a ui-sref="contactUs">Contáctenos</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 <section class="aboutUsContainer">
     <div class="titlePage">
-        <span class="titleFirts">¿Quiénes Somos?</span>
+        <span class="titleFirts">Quiénes Somos</span>
     </div>
-    <div class="aboutUsFigure"></div>
+    <div class="aboutUsFigure col-xs-11 col-md-10"></div>
     <div class="container textContainer">
         <div class="col-xs-12 col-sm-6 textInfo ">
             <p><strong>KAVOLCO S.A.S</strong> es una compañía que construye caminos para el territorio Colombiano y se
@@ -23,7 +26,7 @@
                 ¡Somos la empresa que construye vías de progreso y prosperidad!
                 Nuestra empresa se dedica a la prestación de servicios de Construcción,
                 Mantenimiento, Remodelación, Reforzamiento, Ampliación, Rehabilitación y
-                Adecuación de Obras Civiles, con énfasis en Proyectos de Infraestructura Vial.
+                Adecuación de Obras Civiles, con énfasis en Proyectos de  Infraestructura Vial.
                 Contamos con elevados niveles de eficiencia en el desarrollo de nuestras
                 actividades, mediante un equipo humano altamente calificado…involucrando
                 personal de las comunidades indígenas.</p>
@@ -45,7 +48,7 @@
     <div class="container textContainer margin5pTop">
         <div class="col-xs-12 col-sm-6 col-md-4 textContainer-mini">
             <figure>
-                <img src="imgs/mision.jpg" class="imgRadio" alt="">
+                <img src="imgs/mision-min.jpg" class="imgRadio" alt="">
             </figure>
             <div class="titleP"><span>MISIÓN</span></div>
             <p>Desarrollar parte del progreso Colombiano y de nuestros clientes, con
@@ -56,12 +59,12 @@
             <p>Es primordial para nuestra empresa la tecnología utilizada en el desarrollo de la
                 gestión administrativa y operativa como soporte de su crecimiento. Para asegurar
                 la calidad de las obras y por ende la satisfacción de los clientes, es partícipe en
-                licitaciones de orden territorial, departamental y nacional, con el fin de continuar la
+                licitaciones de orden territorial, departamental y nacional, con el fin de continuar <la></la>
                 línea ascendente fijada.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 textContainer-mini">
             <figure>
-                <img src="imgs/vision.jpg" class="imgRadio" alt="">
+                <img src="imgs/vision-min.jpg" class="imgRadio" alt="">
             </figure>
             <div class="titleP"><span>VISIÓN</span></div>
             <p>Lograr una amplia participación en el mercado nacional en la construcción de
@@ -77,7 +80,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 textContainer-mini">
             <figure>
-                <img src="imgs/medioAm.png" alt="">
+                <img src="imgs/medioAm-min.png" alt="">
             </figure>
             <div class="titleP"><span>COMPROMISO CON EL MEDIO AMBIENTE</span></div>
             <p>Cumpliendo con la conservación del medio ambiente, hemos sembrado más

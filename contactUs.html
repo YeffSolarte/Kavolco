@@ -1,12 +1,29 @@
 <header class="menuNav">
     <nav>
-        <figure>
-            <img src="" alt=""/>
-        </figure>
         <ul class="container">
-            <li><a ui-sref="aboutUs">¿Quienes Somos?</a></li>
-            <li><a ui-sref="services">¿Que Ofrecemos?</a></li>
+            <li><a ui-sref="aboutUs">Quiénes Somos</a></li>
+            <li><a ui-sref="services">Servicios</a></li>
             <li id="homeId"><a ui-sref="home">KAVOLCO</a></li>
+            <li id="buttonNav"><button class="glyphicon glyphicon-menu-hamburger" ng-click="mCtrl.rotateBtn = !mCtrl.rotateBtn" ng-class="{'buttonReverse' : mCtrl.rotateBtn }"></button></li>
         </ul>
+        <div class="navHidden" ng-if="mCtrl.rotateBtn">
+            <ul>
+                <li><a ui-sref="aboutUs">Quiénes Somos</a></li>
+                <li><a ui-sref="services">Productos y Servicios</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
+<section class="aboutUsContainer">
+    <div class="titlePage">
+        <span class="titleFirts">Conctáctenos</span>
+    </div>
+    <div class="contactUsContainer">
+        <div class="col-xs-12 col-md-6 mapContact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1423.9358841364567!2d-76.54577969542606!3d3.4331569993771764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMjUnNTkuNCJOIDc2wrAzMic0MC45Ilc!5e1!3m2!1ses!2sco!4v1467752620377" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="">
+
+        </div>
+    </div>
+</section>

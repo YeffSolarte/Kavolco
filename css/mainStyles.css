@@ -13,21 +13,21 @@ body {
 .homeAppContainer footer {
   width: 100%;
   position: relative;
-  height: 10vh;
+  height: 7em;
   background: #193441;
 }
 .bodySection {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   min-height: 320px;
   min-width: 320px;
   overflow: hidden;
-  background-image: -moz-background-image url("../imgs/fondo-min.jpg");
-  background-image: -webkit-background-image url("../imgs/fondo-min.jpg");
-  background-image: -webkit-background url("../imgs/fondo-min.jpg");
-  background-image: -o-background-image url("../imgs/fondo-min.jpg");
-  background-image: -ms-background url("../imgs/fondo-min.jpg");
-  background-image: url("../imgs/fondo-min.jpg");
+  background-image: -moz-background-image url("../imgs/fondo.jpg");
+  background-image: -webkit-background-image url("../imgs/fondo.jpg");
+  background-image: -webkit-background url("../imgs/fondo.jpg");
+  background-image: -o-background-image url("../imgs/fondo.jpg");
+  background-image: -ms-background url("../imgs/fondo.jpg");
+  background-image: url("../imgs/fondo.jpg");
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
@@ -49,9 +49,10 @@ body {
   margin: 0 auto;
   color: #fff;
   background: rgba(0,0,0,0.5);
+  display: block;
   position: relative;
   height: 75vh;
-  min-height: 224px;
+  min-height: 320px;
   text-align: center;
   border-radius: 7px;
   -webkit-transition: all 300ms ease-out;
@@ -60,7 +61,7 @@ body {
   transition: all 300ms ease-out;
 }
 .bodySection > div > figure {
-  height: 35%;
+  height: 10.5em;
 }
 .bodySection > div > figure > img {
   height: 100%;
@@ -175,6 +176,11 @@ body {
   border: none;
   font-size: 2em;
 }
+.menuNav > nav > ul #buttonNav > button:focus,
+.menuNav > nav > ul #buttonNav > button:active {
+  outline: thin none;
+  outline-offset: 0;
+}
 .menuNav > nav > ul #buttonNav > button:hover {
   color: #193441;
   -webkit-transition: all 300ms ease-out;
@@ -187,21 +193,62 @@ body {
   color: #193441;
   border-bottom: 2px solid transparent;
 }
+.menuNav > nav > ul #buttonNav .buttonReverse {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+}
+.menuNav > nav .navHidden {
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  display: block;
+}
+.menuNav > nav .navHidden > ul {
+  width: 100%;
+  padding: 0;
+}
+.menuNav > nav .navHidden > ul > li {
+  width: 93%;
+  margin: 0 auto;
+  list-style: none;
+  height: 4em;
+  line-height: 4em;
+  border-bottom: 1px solid #dcdcdc;
+}
+.menuNav > nav .navHidden > ul > li:hover {
+  background: rgba(255,255,255,0.8);
+  border-bottom: 2px solid #193441;
+}
+.menuNav > nav .navHidden > ul > li:first-child {
+  border-top: 1px solid #dcdcdc;
+}
+.menuNav > nav .navHidden > ul > li > a {
+  color: #000;
+  padding-left: 1.7em;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  font-size: 1.3em;
+}
 .aboutUsContainer {
   width: 100%;
 }
 .aboutUsFigure {
-  width: 80vw;
-  height: 60vh;
-  margin: 1% auto 2% auto;
+  height: 50vh;
+  margin: 1em auto 2em auto;
+  float: none;
   overflow: hidden;
-  border-radius: 10px;
-  background-image: -moz-background-image url("../imgs/aboutUs1.jpg");
-  background-image: -webkit-background-image url("../imgs/aboutUs1.jpg");
-  background-image: -webkit-background url("../imgs/aboutUs1.jpg");
-  background-image: -o-background-image url("../imgs/aboutUs1.jpg");
-  background-image: -ms-background url("../imgs/aboutUs1.jpg");
-  background-image: url("../imgs/aboutUs1.jpg");
+  border-radius: 3px;
+  background-image: -moz-background-image url("../imgs/aboutUs.jpg");
+  background-image: -webkit-background-image url("../imgs/aboutUs.jpg");
+  background-image: -webkit-background url("../imgs/aboutUs.jpg");
+  background-image: -o-background-image url("../imgs/aboutUs.jpg");
+  background-image: -ms-background url("../imgs/aboutUs.jpg");
+  background-image: url("../imgs/aboutUs.jpg");
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
@@ -219,7 +266,7 @@ body {
   border-bottom: 2px solid #193441;
 }
 .textContainer {
-  width: 82%;
+  width: 100%;
   margin: 1% auto 1% auto;
   text-align: center;
   padding: 0;
@@ -230,7 +277,7 @@ body {
 .textContainer .textInfo,
 .textContainer .textContainer-mini {
   text-align: justify;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .textContainer .imageInfo {
   height: 100%;
@@ -241,7 +288,7 @@ body {
 .textContainer .imageInfo > figure {
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
 }
 .textContainer .imageInfo > figure > img {
   align-self: center;
@@ -281,29 +328,146 @@ body {
 }
 .servicesContainer {
   width: 100%;
+  margin-top: 1em;
+  overflow: hidden;
+  text-align: center;
 }
 .servicesContainer > div {
+  margin-bottom: 2em;
+}
+.servicesContainer > div > .containerImage {
+  width: 15em;
+  height: 15em;
+  line-height: 15em;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+.servicesContainer > div > .containerImage > figure {
   width: 100%;
+}
+.servicesContainer > div > .containerImage > figure > img {
+  width: 90%;
+  height: auto;
+}
+.servicesContainer > div > div {
+  width: 100%;
+}
+.servicesContainer > div > div > span {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.servicesContainer > div:hover {
+  cursor: pointer;
+}
+.servicesContainer > div:hover > .containerImage {
+  border: 7px solid #193441;
+}
+.servicesContainer > div:hover > div > span {
+  border-bottom: 2px solid #193441;
+}
+.containerModal {
+  width: 100%;
+  font-size: 1em;
+}
+.containerModal > .containerModal-header {
+  width: 100%;
+  height: 4em;
+  line-height: 4em;
+  overflow: hidden;
+  text-align: center;
+  background: #193441;
   position: relative;
+}
+.containerModal > .containerModal-header > span {
+  font-size: 1.8em;
+  color: #fff;
+  font-weight: bold;
+}
+.containerModal > .containerModal-header > button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 0.5em;
+  font-size: 1.3em;
+  border: none;
+  background: transparent;
+  vertical-align: middle;
+  line-height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  color: #fff;
+}
+.containerModal > .containerModal-header > button:hover {
+  background: rgba(255,255,255,0.3);
+  color: #fff;
+}
+.containerModal > .containerModal-header > button:focus,
+.containerModal > .containerModal-header > button:active {
+  outline: thin none;
+  outline-offset: 0;
+  background: rgba(255,255,255,0.3);
+}
+.servicesContainer-modal {
+  width: 100%;
+  overflow: hidden;
+}
+.servicesContainer-modal > div > figure {
+  width: 100%;
+  margin: 3em 0;
+}
+.servicesContainer-modal > div > figure > img {
+  width: 15em;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+.servicesContainer-modal > div > figure .width1Image {
+  height: 6em;
+  width: auto;
+}
+.servicesContainer-modal > div > span {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.servicesContainer-modal > div > div > p {
+  font-size: 1.2em;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+.contactUsContainer {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.contactUsContainer .mapContact {
+  background: #000;
+}
+.contactUsContainer .mapContact > iframe {
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+  height: 50vh;
+}
+.float-none {
+  float: none !important;
   display: inline-block;
 }
-.servicesContainer > div > span {
-  font-size: 1.5em;
-}
-.servicesContainer > div > div figure {
-  width: 100%;
-  height: 10em;
-}
-.servicesContainer > div > div figure > img {
-  width: auto;
-  height: 100%;
-}
-@media only screen and (min-width: 532px) {
+@media only screen and (min-width: 500px) and (orientation: landscape) {
   .bodySection > div {
     height: 50vh;
   }
   .bodySection > div > figure {
-    height: 35%;
+    height: 10.5em;
   }
   .bodySection > div > figure > img {
     margin: 1em auto 0 auto;
@@ -311,5 +475,89 @@ body {
   .bodySection > div > ul > li {
     width: initial;
     font-size: 1em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .bodySection > div {
+    height: 50vh;
+  }
+  .bodySection > div > figure {
+    height: 10.5em;
+  }
+  .bodySection > div > figure > img {
+    margin: 1em auto 0 auto;
+  }
+  .bodySection > div > ul > li {
+    width: initial;
+    font-size: 1.3em;
+  }
+  .textContainer {
+    width: 82%;
+  }
+  .textContainer .imageInfo > figure {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .bodySection > div > figure > img {
+    margin: 2em auto;
+  }
+  .bodySection > div > div > span {
+    font-size: 4em;
+  }
+  .bodySection > div > ul > li > a {
+    padding: 0.5em 2em;
+  }
+  .menuNav > nav > ul > li {
+    list-style: none;
+    float: right;
+    display: block;
+  }
+  .menuNav > nav > ul > li > a {
+    font-size: 1.4em;
+  }
+  .menuNav > nav > ul #buttonNav {
+    display: none;
+  }
+  .navHidden {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .textContainer .imageInfo > figure > img {
+    width: auto !important;
+    height: 100% !important;
+  }
+  .servicesContainer > div {
+    margin-bottom: 2em;
+  }
+  .servicesContainer > div > .containerImage {
+    width: 20em;
+    height: 20em;
+    line-height: 20em;
+  }
+  .servicesContainer > div > .containerImage > figure {
+    width: 100%;
+  }
+  .servicesContainer > div > .containerImage > figure > img {
+    width: 90%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .bodySection > div > figure {
+    height: 15em;
+  }
+  .bodySection > div > figure > img {
+    margin: 2em auto;
+  }
+  .bodySection > div > div > span {
+    font-size: 4.5em;
+  }
+  .bodySection > div > ul > li {
+    font-size: 1.5em;
+  }
+  .bodySection > div > ul > li > a {
+    padding: 0.5em 3em;
   }
 }
