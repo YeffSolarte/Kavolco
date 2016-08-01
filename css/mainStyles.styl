@@ -10,11 +10,20 @@ body
   padding 0
   margin 0
   overflow hidden
-  footer
+  & > section
+    min-height 90vh
+    padding-top 7em
+  & > footer
+    //min-height 10vh
+    height 10vh
+    overflow hidden
     width 100%
     position relative
-    height 7em
     background #193441
+    color white
+    padding 1em 0
+    h5
+      font-weight bold
 
 .bodySection
   height 100vh
@@ -234,7 +243,7 @@ body
 .titlePage
   width 100%
   text-align center
-  margin 7em auto 0 auto
+  margin 0 auto 0 auto
   .titleFirts
     font-size 2 em
     font-weight bold
@@ -397,20 +406,40 @@ body
         letter-spacing 1px
 
 .contactUsContainer
-  width 100%
+  width 90%
   overflow hidden
   text-align center
+  margin 5em auto 0 auto
+  float none
   .mapContact
-    background black
+    margin-bottom 5em
     & > iframe
-      width 95%
+      width 100%
       margin 0 auto
       display block
       height 50vh
+  .formContact
+    margin-bottom 5em
+    & > div
+      border 1px solid #d0cdcd
+      width 100%
+      overflow hidden
+      padding 1em 0 2em 0
+      border-radius 5px
+      & > form
+        textarea
+          resize none
+          height 10em
+          font-size 0.9em
+        & > div
+          margin-bottom 1em
 
 .float-none
   float none !important
   display inline-block
+
+.hiddenFooter
+  display none
 
 
 @media only screen and (min-width:500px) and (orientation: landscape)
@@ -443,6 +472,8 @@ body
     .imageInfo
       & > figure
         display flex
+  .hiddenFooter
+    display block
 
 @media only screen and (min-width:980px)
   .bodySection

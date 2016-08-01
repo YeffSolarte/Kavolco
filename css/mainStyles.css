@@ -10,11 +10,21 @@ body {
   margin: 0;
   overflow: hidden;
 }
-.homeAppContainer footer {
+.homeAppContainer > section {
+  min-height: 90vh;
+  padding-top: 7em;
+}
+.homeAppContainer > footer {
+  height: 10vh;
+  overflow: hidden;
   width: 100%;
   position: relative;
-  height: 7em;
   background: #193441;
+  color: #fff;
+  padding: 1em 0;
+}
+.homeAppContainer > footer h5 {
+  font-weight: bold;
 }
 .bodySection {
   height: 100vh;
@@ -258,7 +268,7 @@ body {
 .titlePage {
   width: 100%;
   text-align: center;
-  margin: 7em auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 .titlePage .titleFirts {
   font-size: 2em;
@@ -445,22 +455,45 @@ body {
   letter-spacing: 1px;
 }
 .contactUsContainer {
-  width: 100%;
+  width: 90%;
   overflow: hidden;
   text-align: center;
+  margin: 5em auto 0 auto;
+  float: none;
 }
 .contactUsContainer .mapContact {
-  background: #000;
+  margin-bottom: 5em;
 }
 .contactUsContainer .mapContact > iframe {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   display: block;
   height: 50vh;
 }
+.contactUsContainer .formContact {
+  margin-bottom: 5em;
+}
+.contactUsContainer .formContact > div {
+  border: 1px solid #d0cdcd;
+  width: 100%;
+  overflow: hidden;
+  padding: 1em 0 2em 0;
+  border-radius: 5px;
+}
+.contactUsContainer .formContact > div > form textarea {
+  resize: none;
+  height: 10em;
+  font-size: 0.9em;
+}
+.contactUsContainer .formContact > div > form > div {
+  margin-bottom: 1em;
+}
 .float-none {
   float: none !important;
   display: inline-block;
+}
+.hiddenFooter {
+  display: none;
 }
 @media only screen and (min-width: 500px) and (orientation: landscape) {
   .bodySection > div {
@@ -496,6 +529,9 @@ body {
   }
   .textContainer .imageInfo > figure {
     display: flex;
+  }
+  .hiddenFooter {
+    display: block;
   }
 }
 @media only screen and (min-width: 980px) {
