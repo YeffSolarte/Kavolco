@@ -11,11 +11,12 @@ body {
   overflow: hidden;
 }
 .homeAppContainer > section {
-  min-height: 90vh;
+  min-height: 83vh;
   padding-top: 7em;
 }
 .homeAppContainer > footer {
-  height: 10vh;
+  height: 17vh;
+  min-height: 95px;
   overflow: hidden;
   width: 100%;
   position: relative;
