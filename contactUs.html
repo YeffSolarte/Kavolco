@@ -27,7 +27,7 @@
                 <div class="col-xs-12 text-center">
                     <h4><strong>Formulario de Contacto</strong></h4>
                 </div>
-                <form name="ctrl.contactForm">
+                <form name="mCtrl.contactForm">
                     <div class="col-xs-12">
                         <label for="name">Nombre</label>
                         <input
@@ -35,7 +35,8 @@
                                 id="name"
                                 name="name"
                                 class="form-control"
-                                ng-model="name">
+                                required
+                                ng-model="mCtrl.newContact.name">
                     </div>
                     <div class="col-xs-12">
                         <label for="email">Email</label>
@@ -44,7 +45,8 @@
                                 id="email"
                                 name="email"
                                 class="form-control"
-                                ng-model="email">
+                                required
+                                ng-model="mCtrl.newContact.email">
                     </div>
                     <div class="col-xs-12">
                         <label for="cellphone">Celular</label>
@@ -53,7 +55,8 @@
                                 id="cellphone"
                                 name="cellphone"
                                 class="form-control"
-                                ng-model="cellphone">
+                                required
+                                ng-model="mCtrl.newContact.cellphone">
                     </div>
                     <div class="col-xs-12">
                         <label for="message">Mensaje</label>
@@ -61,14 +64,14 @@
                                 id="message"
                                 name="message"
                                 class="form-control"
-                                ng-model="message">
+                                required
+                                ng-model="mCtrl.newContact.message">
                         </textarea >
                     </div>
                     <div class="col-xs-12">
                         <button
-                                type="button"
                                 class="btn btn-info form-control"
-                                ng-click="">
+                                ng-click="mCtrl.submitFormContact()">
                             Enviar
                         </button>
                     </div>
@@ -78,7 +81,7 @@
     </div>
 </section>
 <footer>
-    <div class=" col-sm-4 text-center hiddenFooter">
+        <div class=" col-sm-4 text-center hiddenFooter">
         <h5>Damaris Solarte</h5>
         <h6>Administradora</h6>
         <span>damart2011@hotmail.com - 304 651 2069</span>
