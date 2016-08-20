@@ -1,3 +1,4 @@
+colorGeneral = #193441
 body
   font-size 11px
   font-family: 'Open Sans', sans-serif;
@@ -9,24 +10,37 @@ body
   padding 0
   margin 0
   overflow hidden
-  footer
+  & > section
+    min-height 83vh
+    padding-top 7em
+  & > footer
+    //min-height 10vh
+    height 17vh
+    min-height 95px
+    overflow hidden
     width 100%
     position relative
-    height 10vh
     background #193441
+    color white
+    padding 1em 0
+    h5
+      font-weight bold
+
+.overflow-hidden
+  overflow hidden
 
 .bodySection
   height 100vh
-  width 100vw
+  width 100%
   min-height 320px
   min-width 320px
   overflow hidden
-  background-image -moz-background-image url("../imgs/fondo-min.jpg")
-  background-image -webkit-background-image url("../imgs/fondo-min.jpg")
-  background-image -webkit-background url("../imgs/fondo-min.jpg")
-  background-image -o-background-image url("../imgs/fondo-min.jpg")
-  background-image -ms-background url("../imgs/fondo-min.jpg")
-  background-image url("../imgs/fondo-min.jpg")
+  background-image -moz-background-image url("../imgs/fondo.jpg")
+  background-image -webkit-background-image url("../imgs/fondo.jpg")
+  background-image -webkit-background url("../imgs/f  ondo.jpg")
+  background-image -o-background-image url("../imgs/fondo.jpg")
+  background-image -ms-background url("../imgs/fondo.jpg")
+  background-image url("../imgs/fondo.jpg")
   //-webkit-background url("../imgs/fondo-min.jpg")
   position relative
   background-position center center
@@ -48,9 +62,11 @@ body
     margin 0 auto
     color white
     background rgba(0,0,0,.5)
+    display block
     position relative
     //height 50vh
     height 75vh
+    min-height 320px
     text-align center
     border-radius 7px
     -webkit-transition all 300ms ease-out
@@ -58,7 +74,7 @@ body
     -o-transition all 300ms ease-out
     transition all 300ms ease-out
     & > figure
-      height 35%
+      height 10.5em
       & > img
         height 100%
         max-width 300px
@@ -118,8 +134,10 @@ body
       & > li
         list-style none
         float right
-        width 10%
+        display none
+        line-height 5em
         height 5em
+        padding 0 2em
         -webkit-transition all 300ms ease-out
         -moz-transition all 300ms ease-out
         -o-transition all 300ms ease-out
@@ -128,42 +146,98 @@ body
         border-bottom 2px solid transparent
         &:hover
           background rgba(255,255,255,.8)
-          border-bottom 2px solid #193441
+          border-bottom 2px solid colorGeneral
         & > a
           font-size 1.4em
           color black
           text-decoration none
-          line-height 3.5em
       #homeId
         float left !important
-        margin-left 3em
+        //margin-left 3em
+        display block
         font-weight bold
         font-family: 'Chewy', cursive;
         letter-spacing .2em
-        width 12%
         & > a
-          font-size 3em
-          line-height 1.8em !important
+          font-size 2.7em
         &:hover
           background initial !important
-          border-bottom 2px solid #193441
-          text-shadow: 0 3px 20px rgba(140, 140, 140, 1);
+          border-bottom 2px solid colorGeneral
+          text-shadow 0 3px 20px rgba(140, 140, 140, 1)
+      #buttonNav
+        float right
+        display block
+        & > button
+          background transparent
+          color grey
+          border none
+          font-size 2em
+          &:focus, &:active
+            outline thin none
+            outline-offset 0
+          &:hover
+            color colorGeneral
+            -webkit-transition all 300ms ease-out
+            -moz-transition all 300ms ease-out
+            -o-transition all 300ms ease-out
+            transition all 300ms ease-out
+        &:hover
+          background transparent
+          color colorGeneral
+          border-bottom 2px solid transparent
+
+        .buttonReverse
+          transform rotate(-90deg)
+          -webkit-transform rotate(-90deg)
+          -moz-transform rotate(-90deg)
+          -o-transform rotate(-90deg)
+          -ms-transform rotate(-90deg)
+    .navHidden
+      -webkit-transition all 500ms ease-out
+      -moz-transition all 500ms ease-out
+      -o-transition all 500ms ease-out
+      transition all 500ms ease-out
+      display block
+      & > ul
+        width 100%
+        padding 0
+        & > li
+          width 93%
+          margin 0 auto
+          list-style none
+          height 4em
+          line-height 4em
+          border-bottom 1px solid gainsboro
+          &:hover
+            background rgba(255,255,255,.8)
+            border-bottom 2px solid colorGeneral
+          &:first-child
+            border-top 1px solid gainsboro
+          & > a
+            color black
+            padding-left 1.7em
+            font-weight bold
+            display block
+            text-decoration none
+            font-size 1.3em
+
 
 .aboutUsContainer
   width 100%
 
 .aboutUsFigure
-  width 80vw
-  height 60vh
-  margin 1% auto 2% auto
+  height 50vh
+  //height 50vh
+  margin 1em auto 2em auto
+  float none
   overflow hidden
-  border-radius 10px
-  background-image -moz-background-image url("../imgs/aboutUs1.jpg")
-  background-image -webkit-background-image url("../imgs/aboutUs1.jpg")
-  background-image -webkit-background url("../imgs/aboutUs1.jpg")
-  background-image -o-background-image url("../imgs/aboutUs1.jpg")
-  background-image -ms-background url("../imgs/aboutUs1.jpg")
-  background-image url("../imgs/aboutUs1.jpg")
+  border-radius 3px
+  background-image -moz-background-image url("../imgs/aboutUs.jpg")
+  background-image -webkit-background-image url("../imgs/aboutUs.jpg")
+  background-image -webkit-background url("../imgs/aboutUs.jpg")
+  background-image -o-background-image url("../imgs/aboutUs.jpg")
+  background-image -ms-background url("../imgs/aboutUs.jpg")
+  background-image url("../imgs/aboutUs.jpg")
   position relative
   background-position center center
   background-repeat no-repeat
@@ -173,14 +247,14 @@ body
 .titlePage
   width 100%
   text-align center
-  margin 5em auto 0 auto
+  margin 0 auto 0 auto
   .titleFirts
-    font-size 3em
+    font-size 2 em
     font-weight bold
-    border-bottom 2px solid #193441
+    border-bottom 2px solid colorGeneral
 
 .textContainer
-  width 82%
+  width 100%
   margin 1% auto 1% auto
   text-align center
   padding 0
@@ -189,7 +263,7 @@ body
   flex-wrap wrap
   .textInfo, .textContainer-mini
     text-align justify
-    font-size 1.5em
+    font-size 1.2em
   .imageInfo
     height 100%
     position absolute
@@ -198,7 +272,8 @@ body
     & > figure
       width 100%
       height 100%
-      display flex
+      //display flex
+      display none
       & > img
         align-self center
         width 100%
@@ -234,92 +309,240 @@ body
 
 .servicesContainer
   width 100%
+  margin-top 1em
+  overflow hidden
+  text-align center
   & > div
-    width 100%
-    position relative
-    display inline-block
-    & > span
-      font-size 1.5em
-    & > div
-      figure
+    margin-bottom 2em
+    & > .containerImage
+      width 15em
+      height 15em
+      line-height 15em
+      display block
+      margin 0 auto
+      border-radius 50%
+      border 7px  solid transparent
+      -webkit-transition all 500ms ease-out
+      -moz-transition all 500ms ease-out
+      -o-transition all 500ms ease-out
+      transition all 500ms ease-out
+      & > figure
         width 100%
-        height 10em
         & > img
-          width auto
-          height 100%
+          width 90%
+          height auto
+    & > div
+      width 100%
+      & > span
+        font-size 1.3em
+        font-weight bold
+    &:hover
+      cursor pointer
+      & > .containerImage
+          border 7px solid colorGeneral
+      & > div
+        & > span
+          border-bottom 2px solid colorGeneral
 
-@media only screen and (min-width:400px) and (max-height:400px)
+
+.containerModal
+  width 100%
+  font-size 1em
+  img
+    width auto
+    height 100%
+    max-height 360px
+
+  & > .containerModal-header
+    width 100%
+    height 4em
+    line-height 4em
+    overflow hidden
+    text-align center
+    background colorGeneral
+    position relative
+    & > span
+      font-size 1.8em
+      color white
+      font-weight bold
+    & > button
+      position absolute
+      right 0
+      top 0
+      margin-right .5em
+      font-size 1.3em
+      border none
+      background transparent
+      vertical-align middle
+      line-height 3em
+      width 3em
+      border-radius 50%
+      -webkit-transition all 500ms ease-out
+      -moz-transition all 500ms ease-out
+      -o-transition all 500ms ease-out
+      transition all 500ms ease-out
+      color white
+      &:hover
+        background rgba(255,255,255,0.3)
+        color white
+      &:focus, &:active
+        outline thin none
+        outline-offset 0
+        background rgba(255,255,255,0.3)
+
+.servicesContainer-modal
+  width 100%
+  overflow hidden
+  & > div
+    & > figure
+      width 100%
+      margin 3em 0
+      & > img 
+        width 15em
+        display block
+        margin 0 auto
+        height auto
+      .width1Image
+        height 6em
+        width auto
+    & > span
+      font-size 1.4em
+      font-weight bold
+    & > div
+      & > p
+        font-size 1.2em
+        text-align justify
+        letter-spacing 1px
+
+.contactUsContainer
+  width 90%
+  overflow hidden
+  text-align center
+  margin 5em auto 0 auto
+  float none
+  .mapContact
+    margin-bottom 5em
+    & > iframe
+      width 100%
+      margin 0 auto
+      display block
+      height 50vh
+  .formContact
+    margin-bottom 5em
+    & > div
+      border 1px solid #d0cdcd
+      width 100%
+      overflow hidden
+      padding 1em 0 2em 0
+      border-radius 5px
+      & > form
+        textarea
+          resize none
+          height 10em
+          font-size 0.9em
+        & > div
+          margin-bottom 1em
+
+.float-none
+  float none !important
+  display inline-block
+
+.hiddenFooter
+  display none
+
+
+@media only screen and (min-width:500px) and (orientation: landscape)
   .bodySection
     & > div
-      height 70vh
+      height 50vh
       & > figure
-        height 35%
+        height 10.5em
         & > img
           margin 1em auto 0 auto
-      & > div
-        margin-top .5em
-        & > span
-          font-size 3em
       & > ul
         & > li
           width initial
           font-size 1em
 
-@media only screen and (min-width:650px)
+@media only screen and (min-width:768px)
   .bodySection
     & > div
       height 50vh
       & > figure
-        height 35%
+        height 10.5em
         & > img
           margin 1em auto 0 auto
       & > ul
         & > li
           width initial
           font-size 1.3em
-
-//@media only screen and (max-width:980px) and (min-height:1632)
-//  .bodySection
-//    & > div
-//      & > figure
-//        height 40%
-//      & > div
-//        & > span
-//          font-size 6em
-//      & > ul
-//        & > li
-//          width 100%
-//          font-size 3em
-
-@media only screen and (min-height:700px)
-  .bodySection
-    & > div
-      height 50vh
-
-@media only screen and (min-width:1360px)
-  .bodySection
-      & > div
-        & > figure
-          height 50%
-        & > div
-          & > span
-            font-size 4em
-
-@media only screen and (-webkit-min-device-pixel-ratio:2) and (max-width:1000px) and (min-height:1024px),
-  only screen and (min--moz-device-pixel-ratio:2) and (max-width:1000px) and (min-height:1024px),
-  only screen and (-o-min-device-pixel-ratio:2/1) and (max-width:1000px) and (min-height:1024px),
-  only screen and (min-device-pixel-ratio:2) and (max-width:1000px) and (min-height:1024px),
-  only screen and (min-resolution:192dpi) and (max-width:1000px) and (min-height:1024px),
-  only screen and (min-resolution:2dppx) and (max-width:1000px) and (min-height:1024px)
-  .bodySection
-    & > div
-      height 50vh
+  .textContainer
+    width 82%
+    .imageInfo
       & > figure
-        height 40%
+        display flex
+  .hiddenFooter
+    display block
+
+@media only screen and (min-width:980px)
+  .bodySection
+    & > div
+      & > figure
+        & > img
+          margin 2em auto
       & > div
         & > span
-          font-size 6em
+          font-size 4em
       & > ul
         & > li
+          & > a
+            padding 0.5em 2em
+  .menuNav
+    & > nav
+      & > ul
+        & > li
+          list-style none
+          float right
+          display block
+          & > a
+            font-size 1.4em
+        #buttonNav
+          display none
+  .navHidden
+    display none !important
+
+@media only screen and (min-width:1200px)
+  .textContainer
+    .imageInfo
+      & > figure
+        & > img
+          width auto !important
+          height 100% !important
+  .servicesContainer
+    & > div
+      margin-bottom 2em
+      & > .containerImage
+        width 20em
+        height 20em
+        line-height 20em
+        & > figure
           width 100%
-          font-size 3em
+          & > img
+            width 90%
+            height auto
+
+@media only screen and (min-width:1600px)
+  .bodySection
+    & > div
+      & > figure
+        height 15em
+        & > img
+          margin 2em auto
+      & > div
+        & > span
+          font-size 4.5em
+      & > ul
+        & > li
+          font-size 1.5em
+          & > a
+            padding 0.5em 3em

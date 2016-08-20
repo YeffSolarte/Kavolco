@@ -1,77 +1,60 @@
 <header class="menuNav">
     <nav>
-        <figure>
-            <img src="" alt=""/>
-        </figure>
         <ul class="container">
-            <li><a ui-sref="aboutUs">¿Quienes Somos?</a></li>
+            <li><a ui-sref="aboutUs">Quiénes Somos</a></li>
             <li><a ui-sref="contactUs">Contáctenos</a></li>
             <li id="homeId"><a ui-sref="home">KAVOLCO</a></li>
+            <li id="buttonNav"><button class="glyphicon glyphicon-menu-hamburger" ng-click="mCtrl.rotateBtn = !mCtrl.rotateBtn" ng-class="{'buttonReverse' : mCtrl.rotateBtn }"></button></li>
         </ul>
+        <div class="navHidden" ng-if="mCtrl.rotateBtn">
+            <ul>
+                <li><a ui-sref="aboutUs">Quienes Somos</a></li>
+                <li><a ui-sref="contactUs">Contáctenos</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 <section class="aboutUsContainer">
     <div class="titlePage">
-        <span class="titleFirts">¿Que Ofrecemos?</span>
+        <span class="titleFirts">Productos y Servicios</span>
     </div>
     <div class="servicesContainer">
-        <div>
-            <span>Maquinaria</span>
-            <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-11 col-sm-6 col-md-4 float-none" ng-click="mCtrl.openModalProductsAndServices('machines')">
+            <div class="containerImage">
                 <figure>
-                    <img src="imgs/Mcama_baja.png" alt="Cama Baja (lowboy)">
+                    <img src="imgs/Mcamion.png" alt="Maquinaria">
                 </figure>
-                <span>Camabaja</span>
-                <div>
-                    <p>
-                        También es conocido como remolque de plataforma baja y básicamente
-                        nos referimos a una herramienta que nos ayuda a transportar, o como
-                        su nombre lo dice, a remolcar objetos pesados fácilmente, gracias a su especial forma.
-                        El primer lowboy fue utilizado en 1920.
-                        Este tipo de remolque es  adecuado para cargas pesadas y de gran tamaño.
-                    </p>
-                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
+            <div>
+                <span>Maquinaria</span>
+            </div>
+        </div>
+        <div class="col-xs-11 col-sm-6 col-md-4 float-none" ng-click="mCtrl.openModalProductsAndServices('services')">
+            <div class="containerImage">
                 <figure>
-                    <img src="imgs/Mretro.png" alt="Retroexcabadora">
+                    <img src="imgs/services.png" alt="Servicios">
                 </figure>
-                <span>Maquina retroexcavadora</span>
-                <div>
-                    <p>
-                        La retroexcavadora es una máquina que se utiliza para realizar excavaciones en terrenos.
-                        Consiste en un balde de excavación en el extremo de un brazo articulado de dos partes.
-                        Se montan normalmente en la parte posterior de un tractor o cargador frontal,
-                        no debe ser confundido con una excavadora.
-                    </p>
-                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <figure>
-                    <img src="imgs/Mretro2.png" alt="Motoniveladora">
-                </figure>
-                <span>MotoNiveladora</span>
-                <div>
-                    <p>
-                        Una motoniveladora es una máquina de construcción que cuenta con una larga hoja metálica
-                        empleada para nivelar terrenos, además posee escarificadores para terrenos duros,
-                        los cuales puede ubicar al frente, en medio del eje delantero y la cuchilla o en la parte trasera,
-                        llamándose en este caso ripper.
-                    </p>
-                </div>
+            <div>
+                <span>Servicios</span>
             </div>
-            <!--<div class="col-xs-12 col-sm-6 col-md-4">-->
-                <!--<figure>-->
-                    <!--<img src="../imgs/Mmotoniveladora.jpg" alt="">-->
-                <!--</figure>-->
-                <!--<span></span>-->
-                <!--<div>-->
-
-                <!--</div>-->
-            <!--</div>-->
         </div>
     </div>
 </section>
 <footer>
-
+    <div class=" col-sm-4 text-center hiddenFooter">
+        <h5>Damaris Solarte</h5>
+        <h6>Administradora</h6>
+        <span>damart2011@hotmail.com - 304 651 2069</span>
+    </div>
+    <div class="col-xs-12 col-sm-4 text-center">
+        <h4><strong>KAVOLCO S.A.</strong></h4>
+        <h6>Popayán - Cauca</h6>
+        <span>Kavolco@gmail.com</span>
+    </div>
+    <div class=" col-sm-4 text-center hiddenFooter">
+        <h5>Santiago Villa</h5>
+        <h6>Gerente</h6>
+        <span>310 436 9881</span>
+    </div>
 </footer>

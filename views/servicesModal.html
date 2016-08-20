@@ -1,0 +1,41 @@
+<section class="containerModal">
+    <div class="containerModal-header">
+        <span class="">Servicios</span>
+        <button class="glyphicon glyphicon-remove" ng-click="mdCtrl.closeModal()"></button>
+    </div>
+    <div class="modal-body overflow-hidden">
+        <div class="col-xs-12">
+            <div>
+                <div uib-carousel active="active" interval="myInterval" no-wrap="false">
+                    <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                        <img ng-src="{{slide.image}}" style="margin:auto;">
+                        <!--<div class="carousel-caption">-->
+                            <!--<h4>{{slide.text}}</h4>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                <!--<figure style="width: 100%">-->
+                    <!--<img src="imgs/services2.jpg" style="width: 100%; height: 15em; border-radius: 10px;" alt=""/>-->
+                <!--</figure>-->
+                <h5><strong>Construcción y operación de Concesiones Viales.</strong></h5>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                <!--<figure style="width: 100%">-->
+                    <!--<img src="imgs/services1.jpg" style="width: 100%; height: 15em; border-radius: 10px;" alt=""/>-->
+                <!--</figure>-->
+                <h5><strong>Mantenimiento Vial.</strong></h5>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                <!--<figure style="width: 100%">-->
+                    <!--<img src="imgs/services3.jpg" style="width: 100%; height: 15em; border-radius: 10px;" alt=""/>-->
+                <!--</figure>-->
+                <h5><strong>Construcción de proyectos de infraestructura vial, movimiento de tierras,
+
+                    carreteras, planos para construcción de vivienda.</strong></h5>
+            </div>
+        </div>
+    </div>
+</section>
+
