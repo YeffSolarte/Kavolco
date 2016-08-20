@@ -69,7 +69,7 @@
                 id: 0
             },
             {
-                image: 'imgs/services1.jpg',
+                image: 'imgs/service1.jpg',
                 text: 'Mantenimiento Vial.',
                 id: 1
             },
