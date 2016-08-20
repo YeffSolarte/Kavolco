@@ -60,7 +60,26 @@
     function ModalController($scope,$uibModalInstance){
         var vm = this;
         vm.closeModal = closeModal;
+        $scope.myInterval = 5000;   
+        $scope.active = 0;
+        $scope.slides = [
+            {
+                image: 'imgs/services2.jpg',
+                text: 'Construcción y operación de Concesiones Viales.',
+                id: 0
+            },
+            {
+                image: 'imgs/services1.jpg',
+                text: 'Mantenimiento Vial.',
+                id: 1
+            },
+            {
+                image: 'imgs/services3.jpg',
+                text: 'Construcción de proyectos de infraestructura vial, movimiento de tierras, carreteras, planos para construcción de vivienda.',
+                id: 2
+            }
 
+        ];
         function closeModal(){
             $uibModalInstance.close();
         }
